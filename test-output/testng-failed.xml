@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="ie(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="testscript.TestCase1">
+        <methods>
+          <include name="quitbrowser"/>
+          <include name="titleVerify" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testscript.TestCase1 -->
+    </classes>
+  </test> <!-- ie(failed) -->
+</suite> <!-- Failed suite [Suite] -->
