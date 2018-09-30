@@ -1,6 +1,7 @@
 package customclass;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -35,10 +36,7 @@ public class BaseClass {
 		}
 	
 	public static String getTitle() {
-		System.out.println("hi");
-		System.out.println(driver);
 		String title = driver.getTitle();
-		System.out.println(title);
 		return title;
 	}
 	
@@ -46,5 +44,8 @@ public class BaseClass {
 		driver.quit();
 	}
 	
+	public static boolean elementIsPresent(WebElement element) {
+		return element.isDisplayed();
+	}
 	
 }

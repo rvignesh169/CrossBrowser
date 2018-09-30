@@ -6,6 +6,7 @@
       <class name="testscript.TestCase1">
         <methods>
           <include name="quitbrowser"/>
+          <include name="elementIsPresentOrNot"/>
           <include name="titleVerify"/>
           <include name="launchBrowser"/>
         </methods>
